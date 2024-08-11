@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 24 Summery</title>
+</head>
+
+<body id="main">
+    <section class="section-1">
+        <h1 id="head-1">heading-item1</h1>
+        <ul>
+            <li>this is list item - 1</li>
+            <li>this is list item - 2</li>
+            <li>this is list item - 3</li>
+            <li>this is list item - 4</li>
+            <li>this is list item - 5</li>
+        </ul>
+    </section>
+    <section class="section-1">
+        <h1>heading-item2</h1>
+        <ul>
+            <li>this is list item - 1</li>
+            <li>this is list item - 2</li>
+            <li>this is list item - 3</li>
+            <li>this is list item - 4</li>
+            <li>this is list item - 5</li>
+        </ul>
+    </section>
+    <section class="section-1">
+        <h1>heading-item3</h1>
+        <ul>
+            <li>this is list item - 1</li>
+            <li>this is list item - 2</li>
+            <li>this is list item - 3</li>
+            <li>this is list item - 4</li>
+            <li>this is list item - 5</li>
+        </ul>
+    </section>
+    <section id="main">
+
+    </section>
+
+    <script>
+        const mainSec = document.getElementById('main');
+        // const li = document.createElement('li');
+        // li.innerText="this is dynamic list item";
+        // mainSec.appendChild(li);
+    
+        const content = document.createElement('div');
+        content.innerHTML = `
+        <h1>This is dynamic heading</h1>
+        <p>the dynamic paragrph this</p>
+        <li>dynamic list </li>
+        <li>dynamic list </li>
+        <li>dynamic list </li>
+        <li>dynamic list </li>
+        `
+        mainSec.appendChild(content)
+    </script>
+</body>
+
+</html>

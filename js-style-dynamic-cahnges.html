@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <center>
+        <h1>Welcome to js dom manupulation</h1>
+        <ul id="main-li">
+            <li class="first">Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li id="demo">Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <button onclick="mybtn()"></button>
+    </center>
+
+    
+
+
+    <script>
+     const listStyle =  document.getElementById('demo').style.color="red";
+     function mybtn(){
+        const li = document.createElement('li');
+        li.innerText="This is new item"
+        const ul = document.getElementById('main-li');
+        ul.appendChild(li)
+     }
+
+    </script>
+</body>
+</html>
